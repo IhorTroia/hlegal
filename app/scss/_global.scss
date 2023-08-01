@@ -1,0 +1,30 @@
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper {
+  background: $gradient-supersoft;
+}
+
+.container {
+  padding: 0 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 964px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 1380px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 1660px;
+  }
+}

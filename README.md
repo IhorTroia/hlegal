@@ -1,12 +1,13 @@
 # Here use name project
 
 ### node version 
-*v18.12.0*
+*v18.15.0*
 
 ### npm version
-*8.12.0*
+*9.5.0*
 
 ## Tools
 
 - Gulp
 - SCSS
+- BEM
