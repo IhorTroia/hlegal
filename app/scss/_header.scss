@@ -28,6 +28,13 @@
     position: relative;
     margin: 0 auto 30px;
 
+    &:hover {
+      border-color: $accent-color;
+      &::before {
+        border-color: $accent-color;
+      }
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -260,8 +267,8 @@
     background: $basic-white;
     border-radius: $radius-md $radius-md 0 0;
     padding: 12px;
-    transition: bottom 0.3s linear;
-    z-index: 1;
+    transition: 0.3s linear;
+    z-index: -1;
 
     @media screen and (min-width: $breakpoint-md) {
       position: static;
@@ -272,6 +279,7 @@
 
     &.active {
       bottom: 0;
+      z-index: 1;
     }
   }
 

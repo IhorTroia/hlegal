@@ -6,6 +6,7 @@ body {
 
 .wrapper {
   background: $gradient-supersoft;
+  border-radius: 0 0 $radius-md $radius-md;
 }
 
 .container {
@@ -24,7 +25,14 @@ body {
     max-width: 1380px;
   }
 
-  @media screen and (min-width: $breakpoint-lg) {
+  @media screen and (min-width: $breakpoint-xxl) {
     max-width: 1660px;
   }
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
 }
