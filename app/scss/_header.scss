@@ -260,7 +260,7 @@
   }
 
   &__nav {
-    position: absolute;
+    position: fixed;
     bottom: -100%;
     left: 8px;
     right: 8px;
@@ -268,18 +268,17 @@
     border-radius: $radius-md $radius-md 0 0;
     padding: 12px;
     transition: 0.3s linear;
-    z-index: -1;
+    z-index: 1;
+
+    &.active {
+      bottom: 0;
+    }
 
     @media screen and (min-width: $breakpoint-md) {
       position: static;
       background: transparent;
       padding: 0;
       border-radius: 0;
-    }
-
-    &.active {
-      bottom: 0;
-      z-index: 1;
     }
   }
 

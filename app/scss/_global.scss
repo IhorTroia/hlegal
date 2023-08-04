@@ -7,6 +7,26 @@ body {
 .wrapper {
   background: $gradient-supersoft;
   border-radius: 0 0 $radius-md $radius-md;
+  position: relative;
+  margin-bottom: 50px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    background: #cacadb;
+  }
+  &::after {
+    bottom: -20px;
+    right: 40px;
+    left: 40px;
+    background: #e7e7f2;
+  }
 }
 
 .container {
