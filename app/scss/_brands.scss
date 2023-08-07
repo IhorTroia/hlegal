@@ -1,0 +1,107 @@
+.brands {
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $main-color;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__list {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1720px;
+      margin: 0 auto;
+      border-radius: $radius-md;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list-item {
+    @include flex-center;
+    height: 120px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      flex: 1 1 33%;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 25%;
+    }
+
+    &:first-child {
+      background: #1c4280;
+    }
+    &:nth-child(2) {
+      background: #143646;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(0deg, #f48b30 0%, #f48b30 100%), #f48b30;
+    }
+    &:nth-child(4) {
+      background: #9e4dc3;
+    }
+    &:nth-child(5) {
+      background: #fd9339;
+    }
+    &:nth-child(6) {
+      background: #e2e2e4;
+    }
+    &:nth-child(7) {
+      background: #c71c36;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+    &:nth-child(8) {
+      background: #dcf3f9;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+    &:nth-child(9) {
+      background: #eaeaea;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+    &:nth-child(10) {
+      background: #282240;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+    &:nth-child(11) {
+      background: #1d4568;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+    &:last-child {
+      background: #000;
+      display: none;
+      @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+      }
+    }
+  }
+
+  &__list-link {
+    display: block;
+  }
+
+  &__list-logo {
+  }
+}
