@@ -87,6 +87,15 @@ $breakpoint-xxl: 1920px;
   }
 }
 
+@mixin base-svg-md($basic-white) {
+  fill: $basic-white;
+  width: 38px;
+  height: 38px;
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
 // !FONTS
 
 @font-face {

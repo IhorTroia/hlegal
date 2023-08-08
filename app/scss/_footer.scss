@@ -1,0 +1,129 @@
+.footer {
+  padding: 30px 0 70px 0;
+  background: $bg-color;
+  text-align: center;
+
+  &__top {
+    margin-bottom: 20px;
+    position: relative;
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__address {
+    color: $main-color;
+    margin-bottom: 10px;
+    position: relative;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -17px;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background: $text-color;
+        border-radius: $radius-rounded;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $regular-color;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__bottom {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin: 0;
+    }
+  }
+
+  &__social-icon {
+    @include base-svg-md($regular-color);
+    display: block;
+    margin: 0 auto 10px;
+    cursor: pointer;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 0;
+    }
+  }
+
+  &__phone {
+    display: block;
+    font-weight: 700;
+    color: $alt-color;
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: relative;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 0;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -17px;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background: $text-color;
+        border-radius: $radius-rounded;
+        pointer-events: none;
+      }
+
+      &::after {
+        right: 0;
+        left: -17px;
+      }
+    }
+  }
+
+  &__email {
+    display: block;
+    font-weight: 700;
+    color: $regular-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    position: absolute;
+    top: 190px;
+    right: 50%;
+    transform: translateX(50%);
+
+    @media screen and (min-width: $breakpoint-md) {
+      top: 0;
+      right: 0;
+      transform: translateX(0);
+    }
+  }
+}
