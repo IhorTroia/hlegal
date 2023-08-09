@@ -1,13 +1,22 @@
 .footer {
-  padding: 30px 0 70px 0;
+  padding: 30px 0;
   background: $bg-color;
   text-align: center;
+
+  &__container {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
 
   &__top {
     margin-bottom: 20px;
     position: relative;
-
     @media screen and (min-width: $breakpoint-md) {
+      flex: 1 1 50%;
+      order: 1;
       display: flex;
       align-items: center;
       gap: 30px;
@@ -53,9 +62,9 @@
   &__bottom {
     @media screen and (min-width: $breakpoint-md) {
       display: flex;
-      align-items: center;
+      order: 3;
       gap: 30px;
-      margin: 0;
+      align-items: center;
     }
   }
 
@@ -107,23 +116,25 @@
     font-weight: 700;
     color: $regular-color;
     text-decoration: none;
+    margin-bottom: 30px;
 
     &:hover {
       color: $accent-color;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 0;
     }
   }
 
   &__text {
     color: $text-color;
-    position: absolute;
-    top: 190px;
-    right: 50%;
-    transform: translateX(50%);
-
     @media screen and (min-width: $breakpoint-md) {
-      top: 0;
-      right: 0;
-      transform: translateX(0);
+      flex: 1 1 50%;
+      order: 2;
+      display: flex;
+      justify-content: end;
+      margin-bottom: 20px;
     }
   }
 }

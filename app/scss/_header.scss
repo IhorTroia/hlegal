@@ -113,8 +113,14 @@
     border-radius: $radius-sm;
     text-transform: uppercase;
 
+    &:hover {
+      color: $accent-color;
+      background: $bg-alt-color;
+    }
+
     &.active {
       background: $accent-color;
+      color: $basic-white;
     }
   }
 
@@ -341,6 +347,8 @@
     display: block;
     background: $bg-color;
     padding: 7px;
+    position: relative;
+    
 
     @media screen and (min-width: $breakpoint-md) {
       border-radius: 0;
@@ -348,6 +356,24 @@
       color: $basic-white;
       font-size: 16px;
       padding: 0;
+      
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: $separator-color;
+        bottom: -3px;
+        right: 0;
+        left: 0;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
     }
 
     &.active {
