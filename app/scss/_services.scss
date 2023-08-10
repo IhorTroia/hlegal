@@ -98,6 +98,10 @@
     font-weight: 700;
     color: $regular-color;
     margin-bottom: 15px;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   &__list-text {

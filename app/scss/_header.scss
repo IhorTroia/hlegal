@@ -11,8 +11,6 @@
   @media screen and (min-width: $breakpoint-lg) {
     background-size: auto 100%;
   }
-  &__header {
-  }
 
   &__title {
     @include title($basic-white);
@@ -102,9 +100,6 @@
     }
   }
 
-  &__langs-item {
-  }
-
   &__langs-link {
     color: $basic-white;
     text-decoration: none;
@@ -114,13 +109,11 @@
     text-transform: uppercase;
 
     &:hover {
-      color: $accent-color;
-      background: $bg-alt-color;
+      background: rgba(255, 255, 255, 0.2);
     }
 
     &.active {
       background: $accent-color;
-      color: $basic-white;
     }
   }
 
@@ -210,11 +203,13 @@
     gap: 20px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAxMiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjcyODI3IDBIMTEuOTUwNUwzLjU1NTc0IDI2SDAuMzMzNDk2TDguNzI4MjcgMFoiIGZpbGw9IiNGMDE0NUEiLz4KPC9zdmc+Cg==");
     background-repeat: no-repeat;
-    background-position: 75px 50%;
+    background-position: 75px 0;
     background-size: auto 26px;
 
     @media screen and (min-width: $breakpoint-md) {
-      background: transparent;
+      background-position: 135px 0;
+      background-size: auto 47px;
+      gap: 30px;
     }
 
     img {
@@ -229,7 +224,7 @@
 
     span {
       @media screen and (min-width: $breakpoint-md) {
-        display: none;
+        font-size: 36px;
       }
     }
   }
@@ -348,7 +343,6 @@
     background: $bg-color;
     padding: 7px;
     position: relative;
-    
 
     @media screen and (min-width: $breakpoint-md) {
       border-radius: 0;
@@ -356,7 +350,6 @@
       color: $basic-white;
       font-size: 16px;
       padding: 0;
-      
 
       &::before {
         content: "";
@@ -364,7 +357,7 @@
         width: 0;
         height: 2px;
         background: $separator-color;
-        bottom: -3px;
+        bottom: -5px;
         right: 0;
         left: 0;
       }
@@ -379,7 +372,11 @@
     &.active {
       color: $accent-color;
       @media screen and (min-width: $breakpoint-md) {
-        color: $active-color;
+        padding-bottom: 3px;
+        border-bottom: 2px solid $accent-color;
+        &::before {
+          width: 0;
+        }
       }
     }
 
@@ -387,7 +384,6 @@
       background: $bg-alt-color;
       @media screen and (min-width: $breakpoint-md) {
         background: transparent;
-        color: $text-color;
       }
     }
 
@@ -397,5 +393,12 @@
         background: transparent;
       }
     }
+  }
+}
+
+.header--margin {
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 60px;
   }
 }
