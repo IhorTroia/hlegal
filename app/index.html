@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hlegal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -390,10 +394,10 @@
             <div class="header__inner">
               <ul class="header__langs">
                 <li class="header__langs-item">
-                  <a class="header__langs-link" href="#">ук</a>
+                  <a class="header__langs-link" href="#">ua</a>
                 </li>
                 <li class="header__langs-item">
-                  <a class="header__langs-link" href="#">ру</a>
+                  <a class="header__langs-link" href="#">ru</a>
                 </li>
                 <li class="header__langs-item">
                   <a class="header__langs-link active" href="#">en</a>
@@ -403,7 +407,11 @@
                 Kyiv, Mechnikova str., 14/1
               </address>
               <a class="header__phone" href="tel:0800211927">0800 211 927</a>
-              <a class="header__social" href="#">
+              <a
+                class="header__social"
+                target="_blank"
+                href="https://uk-ua.facebook.com/"
+              >
                 <svg class="header__social-icon">
                   <use href="images/sprite.svg#facebook-logo"></use>
                 </svg>
@@ -501,7 +509,10 @@
           <h2 class="services__title">What can we do better than others?</h2>
           <ul class="services__list">
             <li class="services__list-item">
-              <a href="#" class="services__list-link-svg">
+              <a
+                href="services/services-it.html"
+                class="services__list-link-svg"
+              >
                 <svg class="services__list-svg">
                   <use href="#ecommerce"></use>
                 </svg>
@@ -597,50 +608,82 @@
         </div>
       </section>
     </div>
-    <section>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, molestiae!
-      Libero, ducimus. Assumenda quam ratione neque, minima maxime aperiam saepe
-      explicabo ab consectetur recusandae expedita corrupti commodi. Minus
-      saepe, necessitatibus neque libero ipsum veniam culpa iusto sequi! Quia
-      corporis quod voluptate minus consectetur explicabo cupiditate fugit
-      voluptates quis harum fuga sint perspiciatis perferendis sequi facere,
-      rerum nemo, quisquam illum quaerat dignissimos nobis. Tempore dolor
-      commodi optio eaque porro vitae, placeat dicta voluptates! Maxime
-      similique distinctio, odio id, magnam quis accusantium quibusdam facilis
-      deleniti nulla sed voluptatibus reiciendis ipsam! Sunt facilis obcaecati
-      quia ipsa pariatur veniam repudiandae voluptas cupiditate culpa impedit
-      ratione, deserunt quam vitae hic aspernatur illo alias? Cum eveniet
-      laudantium alias ad reiciendis, quia iusto ut harum fuga quisquam,
-      nesciunt voluptatum laboriosam eligendi odio eos quis quas itaque fugiat.
-      Magnam rem expedita ea explicabo ut quo ipsum nulla iusto quisquam, alias,
-      necessitatibus ipsa minima praesentium quaerat perferendis aperiam illo
-      enim reiciendis. Labore, provident ducimus. Magni quasi a nemo omnis sequi
-      facilis esse harum, vitae voluptas rem ullam dolorum repellendus corrupti
-      aliquid eius aspernatur fuga error ipsa ab repellat temporibus dicta
-      facere reprehenderit? Omnis laboriosam enim sunt, ea provident saepe magni
-      quisquam totam praesentium voluptas dolorem voluptatibus reprehenderit, in
-      ratione ipsum cum quos est? Pariatur itaque alias optio sed similique,
-      rerum excepturi quibusdam quisquam eligendi dolor officiis! Nesciunt
-      doloremque molestias labore quidem illo ratione, quos mollitia inventore?
-      Eius repellat, reiciendis rerum cumque unde inventore voluptates debitis,
-      accusamus ipsam amet perferendis dolorem laudantium vitae maiores. Veniam,
-      harum dolore. Adipisci eius inventore amet odio incidunt iusto error eaque
-      corrupti omnis, recusandae a totam, repellendus distinctio iure vel
-      suscipit sapiente voluptas modi illum iste sequi. Voluptatum vitae
-      excepturi nemo corporis quae laudantium eius sapiente odit pariatur
-      quibusdam sequi itaque error, alias nihil voluptatem. Accusantium adipisci
-      nam, necessitatibus animi repudiandae iusto quae culpa optio recusandae
-      sunt excepturi quam rem voluptatibus officia beatae et amet qui illum sed.
-      Assumenda odit accusantium laudantium, molestias id possimus unde minima.
-      Velit quos corporis dolorum veritatis odit? Facere corporis dignissimos
-      excepturi natus corrupti sint quae fuga ducimus assumenda, ab, saepe
-      consequuntur possimus harum cumque. Eius aperiam a aliquid nihil dicta et
-      dolores illum tempora accusamus, itaque voluptate, pariatur incidunt
-      maiores doloribus numquam quibusdam, odit ipsa? Asperiores sint molestias
-      illo. Nulla quod culpa corrupti quo quaerat placeat molestiae beatae ipsa?
-      Velit earum, nostrum non laboriosam repellat, quae distinctio optio quod
-      reiciendis corrupti, omnis enim delectus ratione maiores explicabo facilis
-      alias?
+    <section class="team container">
+      <div class="team__swiper">
+        <div class="swiper-wrapper team__wrapper">
+          <div class="swiper-slide team__slide">
+            <div class="team__image">
+              <img
+                src="images/team-1.jpg"
+                alt="team1"
+                width="315"
+                height="500"
+              />
+            </div>
+            <div class="team__inner">
+              <a class="team__inner-link" href="#">TEAM</a>
+              <h2 class="team__inner-title">
+                We are used to taking responsibility and always guarantee
+                honest, timely assistance, even in situations where most people
+                are powerless.
+              </h2>
+              <div class="team__inner-footer">
+                <p class="team__inner-footer-name">Alexander Alexandrovsky</p>
+                <p class="team__inner-footer-job">Managing partner</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide team__slide">
+            <div class="team__image">
+              <img
+                src="images/team-2.jpg"
+                alt="team1"
+                width="315"
+                height="500"
+              />
+            </div>
+            <div class="team__inner">
+              <a class="team__inner-link" href="#">TEAM</a>
+              <h2 class="team__inner-title">
+                We are used to taking responsibility and always guarantee
+                honest, timely assistance, even in situations where most people
+                are powerless.
+              </h2>
+              <div class="team__inner-footer">
+                <p class="team__inner-footer-name">Evgeny Patrikov</p>
+                <p class="team__inner-footer-job">
+                  Equity partner, Attorney-at-law
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide team__slide">
+            <div class="team__image">
+              <img
+                src="images/team-5.jpg"
+                alt="team1"
+                width="315"
+                height="500"
+              />
+            </div>
+            <div class="team__inner">
+              <a class="team__inner-link" href="#">TEAM</a>
+              <h2 class="team__inner-title">
+                We are used to taking responsibility and always guarantee
+                honest, timely assistance, even in situations where most people
+                are powerless.
+              </h2>
+              <div class="team__inner-footer">
+                <p class="team__inner-footer-name">Oksana Kobzar</p>
+                <p class="team__inner-footer-job">
+                  Equity partner, Attorney-at-law
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team__swiper-pagination"></div>
+      </div>
     </section>
     <section class="brands">
       <h3 class="brands__title">They already trust us</h3>
@@ -850,7 +893,12 @@
       <div class="container footer__container">
         <div class="footer__top">
           <address class="footer__address">Kyiv, Mechnikova str., 14/1</address>
-          <a class="footer__link" href="#">ON MAP</a>
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://www.google.com/maps/place/Hillel+IT+School/@50.437057,30.530262,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf07295b8e39:0x41f43bbd96473152!8m2!3d50.4370536!4d30.5328369!16s%2Fg%2F11bxfwtw36?entry=ttu"
+            >ON MAP</a
+          >
         </div>
         <div class="footer__bottom">
           <svg class="footer__social-icon">
@@ -864,6 +912,7 @@
         <p class="footer__text">© 2021 HLEGAL Law company, LLC</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
