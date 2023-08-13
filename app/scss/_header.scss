@@ -119,11 +119,11 @@
 
   &__address {
     display: none;
+    color: $basic-white;
 
     @media screen and (min-width: $breakpoint-md) {
       display: block;
       position: relative;
-      color: $text-color;
       font-weight: 400;
       &::before {
         content: "";
@@ -356,7 +356,7 @@
         position: absolute;
         width: 0;
         height: 2px;
-        background: $separator-color;
+        background: $basic-white;
         bottom: -5px;
         right: 0;
         left: 0;
@@ -400,5 +400,49 @@
   margin-bottom: 30px;
   @media screen and (min-width: $breakpoint-md) {
     margin-bottom: 60px;
+  }
+}
+
+.header__inner--grey {
+  background: $bg-color;
+}
+
+.langs-link--grey {
+  color: $text-color;
+  &:hover {
+    background: $bg-color;
+  }
+}
+
+.header-icon--grey {
+  fill: $text-color;
+}
+
+.address--grey {
+  color: $text-color;
+}
+
+.phone--grey {
+  color: $text-color;
+}
+
+.nav-link--blue {
+  @media screen and (min-width: $breakpoint-md) {
+    color: $regular-color;
+    &::before {
+      background: $regular-color;
+    }
+  }
+}
+
+.logo-blue {
+  color: $main-color;
+}
+
+.burger--grey {
+  &::before,
+  &::after,
+  span {
+    background: $main-color;
   }
 }

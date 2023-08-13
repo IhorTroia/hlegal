@@ -30,14 +30,14 @@
   });
 })();
 
-const teamSwiper = new Swiper(".team__swiper", {
+const teamSwiper = new Swiper(".teamSlider__swiper", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
     delay: 5000,
   },
   pagination: {
-    el: ".team__swiper-pagination",
+    el: ".teamSlider__swiper-pagination",
     clickable: true,
   },
 });
