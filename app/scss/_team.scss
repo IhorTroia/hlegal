@@ -1,39 +1,121 @@
 .team {
   padding: 30px 0 60px;
 
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 60px 0;
+  }
+
   &__title {
     @include subtitle(transparent);
     @include main-gradient-text($gradient-red-text);
     margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 38px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      max-width: 664px;
+      margin: 0 auto 60px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1080px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1360px;
+    }
   }
 
   &__workers {
-    text-align: center;
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
   }
 
   &__worker {
+    max-width: 315px;
+    margin: 0 auto 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      max-width: 294px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      max-width: 261px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 400px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 493px;
+    }
   }
 
   &__worker-pic {
-    width: 315px;
-    margin: 0 auto;
     border-radius: $radius-md;
     overflow: hidden;
+    margin-bottom: 15px;
+    @media screen and (min-width: $breakpoint-md) {
+      height: 400px;
+    }
+  }
+
+  &__worker-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 493px;
+    }
   }
 
   &__inner-footer-name {
   }
 
+  &__worker-link {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: $main-color;
+    position: relative;
+    &:hover {
+      color: $accent-color;
+      &::before {
+        border-color: $accent-color;
+      }
+      &::after {
+        background: $bg-alt-color;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid $regular-color;
+      border-right: 2px solid $regular-color;
+      z-index: 1;
+      transform: rotate(-45deg);
+      cursor: pointer;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      cursor: pointer;
+      right: 0;
+      width: 32px;
+      height: 32px;
+      background: $bg-color;
+      border-radius: $radius-rounded;
+    }
+  }
+
   &__inner-footer-job {
   }
-}
-
-
-
-
-
-
-
-.name--dark {
-  color: $main-color;
 }
