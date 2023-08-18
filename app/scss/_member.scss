@@ -1,63 +1,65 @@
 .member {
-
-  &__inner {
-    max-width: 315px;
-    margin: 0 auto;
-    padding: 30px 0;
+  &__container {
     @media screen and (min-width: $breakpoint-md) {
-      max-width: none;
-      margin: 0;
-      display: flex;
-      gap: 30px;
+      display: grid;
+      grid-template-areas:
+        "pic data"
+        "desc desc";
+        grid-gap: 30px;
+        grid-template-columns: 50% 50%;
     }
     @media screen and (min-width: $breakpoint-lg) {
-      gap: 60px;
+      grid-template-columns: 40% 60%;
     }
   }
 
-  &__inner-pic {
+  &__pic {
     border-radius: $radius-md;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin: 30px 0;
     @media screen and (min-width: $breakpoint-md) {
       max-width: 300px;
+      grid-area: pic;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
     }
   }
 
-  &__inner-img {
+  &__img {
     width: 100%;
     object-fit: cover;
   }
 
-  &__inner-data {
+  &__data {
+    margin-bottom: 30px;
     @media screen and (min-width: $breakpoint-md) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      grid-area: data;
+      align-self: center;
     }
     @media screen and (min-width: $breakpoint-lg) {
-      justify-content: start;
+      align-self: start;
+      padding-top: 30px;
     }
   }
 
-  &__iiner-name {
+  &__name {
     @include title(transparent);
     @include main-gradient-text($gradient-red-text);
     margin-bottom: 15px;
   }
 
-  &__inner-job {
+  &__job {
     margin-bottom: 10px;
   }
 
-  &__inner-email {
+  &__email {
     display: block;
     color: $regular-color;
     text-decoration: none;
     margin-bottom: 10px;
   }
 
-  &__inner-link {
+  &__link {
     display: block;
     color: $regular-color;
     text-decoration: none;
@@ -66,6 +68,13 @@
   &__desc {
     padding-top: 30px;
     border-top: 4px solid $separator-color;
+
+    @media screen and (min-width: $breakpoint-md) {
+      grid-area: desc;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      align-self: end;
+    }
   }
 
   &__desc-text {
