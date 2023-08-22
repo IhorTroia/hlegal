@@ -1,0 +1,172 @@
+.about {
+  padding-top: 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 60px;
+  }
+
+  &__container {
+    @media screen and (min-width: $breakpoint-lg) {
+      max-width: 904px;
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1080px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1360px;
+    }
+  }
+
+  &__idea {
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 60%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      flex: 1 1 65%;
+    }
+  }
+
+  &__title {
+    @include main-gradient-text($gradient-red-text);
+    @include subtitle(transparent);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 38px;
+    }
+  }
+
+  &__idea-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $breakpoint-lg) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    border-left: 4px solid $separator-color;
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 40%;
+      margin-bottom: 150px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      flex: 1 1 30%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-svg {
+    width: 32px;
+    height: 32px;
+    padding-top: 7px;
+    padding-right: 5px;
+  }
+
+  &__list-quantity {
+    @include main-gradient-text($gradient-red-text);
+    @include subtitle(transparent);
+  }
+
+  &__list-text {
+    margin-top: 10px;
+  }
+
+  &__team {
+    background: url(../images/team-bg.jpg) no-repeat 50% / cover;
+    height: 114px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      height: 234px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      height: 312px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      height: 438px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      height: 584px;
+    }
+  }
+
+  &__team-link {
+    height: 100%;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 13px;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    opacity: 0.8;
+    color: $basic-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include flex-center;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 46px;
+      letter-spacing: 63px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 86px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      font-size: 96px;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 60%;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      flex: 1 1 70%;
+    }
+  }
+
+  &__text-par {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $breakpoint-lg) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__quality {
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 40%;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      flex: 1 1 30%;
+    }
+  }
+}
+
+.about--gap {
+  @media screen and (min-width: $breakpoint-lg) {
+    gap: 60px;
+  }
+}

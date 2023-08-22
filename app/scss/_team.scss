@@ -72,9 +72,6 @@
     }
   }
 
-  &__inner-footer-name {
-  }
-
   &__worker-link {
     display: block;
     text-decoration: none;
@@ -114,8 +111,5 @@
       background: $bg-color;
       border-radius: $radius-rounded;
     }
-  }
-
-  &__inner-footer-job {
   }
 }
