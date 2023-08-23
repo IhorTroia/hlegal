@@ -41,3 +41,12 @@ const teamSwiper = new Swiper(".teamSlider__swiper", {
     clickable: true,
   },
 });
+
+const aboutSwiper = new Swiper(".aboutSlider__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".aboutSlider__swiper-pagination",
+    clickable: true,
+  },
+});

@@ -165,6 +165,58 @@
   }
 }
 
+.aboutSlider {
+  background: $bg-color;
+  padding: 30px 0;
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $main-color;
+    margin-bottom: 30px;
+  }
+
+  &__swiper {
+    width: 255px;
+    height: 90px;
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $radius-md;
+    overflow: hidden;
+
+    img {
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__swiper-pagination {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 69px;
+    text-align: center;
+    .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      background: $regular-color;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
 .about--gap {
   @media screen and (min-width: $breakpoint-lg) {
     gap: 60px;

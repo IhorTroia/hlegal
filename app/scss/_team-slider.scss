@@ -110,6 +110,9 @@
       width: 16px;
       height: 16px;
       background: $regular-color;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 }
