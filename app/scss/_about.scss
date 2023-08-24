@@ -167,7 +167,7 @@
 
 .aboutSlider {
   background: $bg-color;
-  padding: 30px 0;
+  padding-top: 30px;
   &__title {
     text-align: center;
     font-size: 14px;
@@ -179,13 +179,18 @@
 
   &__swiper {
     width: 255px;
-    height: 90px;
+    @media screen and (min-width: $breakpoint-md) {
+      width: 100%;
+    }
   }
 
   &__wrapper {
+    width: 100%;
   }
 
   &__slide {
+    width: 255px;
+    height: 90px;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -198,14 +203,18 @@
     img {
       display: block;
       object-fit: cover;
+      @media screen and (min-width: $breakpoint-lg) {
+        height: 60px;
+      }
     }
   }
 
   &__swiper-pagination {
     display: block;
     margin-top: 30px;
-    margin-bottom: 69px;
     text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $separator-color;
     .swiper-pagination-bullet {
       width: 16px;
       height: 16px;
@@ -214,6 +223,30 @@
         opacity: 0.6;
       }
     }
+  }
+}
+
+.frst-ach {
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 80px;
+  }
+}
+
+.sec-ach {
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 159px;
+  }
+}
+
+.third-ach {
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 195px;
+  }
+}
+
+.fourth-ach {
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 166px;
   }
 }
 

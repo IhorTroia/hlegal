@@ -44,7 +44,16 @@ const teamSwiper = new Swiper(".teamSlider__swiper", {
 
 const aboutSwiper = new Swiper(".aboutSlider__swiper", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 40,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+    },
+  },
   pagination: {
     el: ".aboutSlider__swiper-pagination",
     clickable: true,
