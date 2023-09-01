@@ -1,0 +1,145 @@
+.publication-new {
+  padding-top: 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 60px;
+  }
+  &__container {
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1110px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1390px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: $radius-md;
+
+    @media screen and (min-width: $breakpoint-md) {
+      height: 500px;
+    }
+  }
+
+  &__title {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $main-color;
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 30px;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    line-height: 26px;
+    margin-bottom: 30px;
+    &:last-of-type {
+      padding-bottom: 30px;
+      border-bottom: 4px solid $separator-color;
+    }
+  }
+
+  &__subtitle {
+    @include main-gradient-text($gradient-red-text);
+    @include subtitle(transparent);
+    margin-bottom: 30px;
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 38px;
+    }
+  }
+
+  &__third-title {
+    font-weight: 700;
+    color: $main-color;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 22px;
+    }
+  }
+
+  &__inspections {
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__inspections-number {
+    display: block;
+    color: $accent-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__inspections-text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  &__google-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 640px;
+      height: 398px;
+    }
+  }
+
+  &__google-text {
+    padding-top: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $text-color;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  &__list-item {
+    &:hover a {
+      background: $bg-alt-color;
+    }
+  }
+
+  &__list-link {
+    display: block;
+    padding: 9px;
+    background: $bg-color;
+    border-radius: $radius-md;
+  }
+
+  &__list-svg {
+    width: 24px;
+    height: 24px;
+    background: $bg-color;
+  }
+}
+
+.border-top {
+  padding-top: 30px;
+  border-top: 4px solid $separator-color;
+}
