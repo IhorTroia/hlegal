@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>team</title>
+    <title>contact</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -44,7 +44,7 @@
               alt="hlegal"
               width="70"
               height="32"
-            /><span class="logo-blue">team</span></a
+            /><span class="logo-blue">contact</span></a
           >
           <div class="header__box-burger burger--grey">
             <span></span>
@@ -64,7 +64,9 @@
               >
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link active" href="#">team</a>
+              <a class="header__nav-link nav-link--blue" href="team.html"
+                >team</a
+              >
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link nav-link--blue" href="#"
@@ -72,113 +74,38 @@
               >
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link nav-link--blue" href="contact.html"
-                >contact</a
-              >
+              <a class="header__nav-link active" href="#">contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="team">
-      <div class="container team__container">
-        <h1 class="team__title">
-          We are used to taking responsibility and always guarantee honest,
-          timely assistance, even in situations where most are powerless.
-        </h1>
-        <div class="team__workers">
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-1.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html"
-              >Alexander Alexandrovsky</a
-            >
-            <p class="teamSlider__inner-footer-job">Managing partner</p>
-          </div>
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-2.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html"
-              >Evgeny Patrikov</a
-            >
-            <p class="teamSlider__inner-footer-job">
-              Equity partner, Attorney-at-law
-            </p>
-          </div>
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-3.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html"
-              >Vladislav Melnik</a
-            >
-            <p class="teamSlider__inner-footer-job">Associate</p>
-          </div>
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-4.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html">Sergey Binn</a>
-            <p class="teamSlider__inner-footer-job">Managing partner</p>
-          </div>
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-5.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html"
-              >Oksana Kobzar</a
-            >
-            <p class="teamSlider__inner-footer-job">
-              Equity partner, Attorney-at-law
-            </p>
-          </div>
-          <div class="team__worker">
-            <div class="team__worker-pic">
-              <img
-                class="team__worker-img"
-                src="images/team-6.jpg"
-                alt="team1"
-                width="315"
-                height="300"
-              />
-            </div>
-            <a class="team__worker-link" href="team-member.html">Julia Wolk</a>
-            <p class="teamSlider__inner-footer-job">
-              Associate, Attorney-at-law
-            </p>
-          </div>
+
+    <main class="contact">
+      <div class="container contact__container">
+        <div class="contact__info">
+          <p class="contact__info-map">Kyiv,</p>
+          <p class="contact__info-map">Mechnikova str, 14</p>
+          <a class="contact__info-phone" href="tel:0800211927">0800 211 927</a>
+          <a class="contact__info-email" href="contact@forstudy.space"
+            >contact@forstudy.space</a
+          >
+          <a class="contact__info-facebook" href="#">
+            <svg class="contact__info-svg">
+              <use href="images/sprite.svg#facebook-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="contact__form">
+          <form class="form" id="form">
+            <h1 class="form__title">We would like to help you</h1>
+            <input class="form__name" type="text" placeholder="Name" />
+            <input class="form__message" type="text" placeholder="Message" />
+            <h2 class="form__subtitle">How to answer you?</h2>
+            <input class="form__tel" type="tel" placeholder="Phone number" />
+            <input class="form__email" type="email" placeholder="Email" />
+            <button class="form__btn">Send message</button>
+          </form>
         </div>
       </div>
     </main>
