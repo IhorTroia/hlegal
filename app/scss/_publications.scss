@@ -72,6 +72,9 @@
   margin-bottom: 30px;
   border-radius: $radius-sm;
   overflow: hidden;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 0;
+  }
 
   &__link {
     display: block;

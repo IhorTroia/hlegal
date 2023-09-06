@@ -40,6 +40,13 @@
     background: $regular-color;
     color: $basic-white;
     cursor: pointer;
+
+    &:hover {
+      background: $hover-coolor;
+    }
+    &:active {
+      background: $active-color;
+    }
   }
 
   &__subtitle {
@@ -70,9 +77,12 @@
 
   &__list-item {
     padding-left: 12px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     color: $basic-white;
     position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &::before {
       content: "";

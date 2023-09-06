@@ -1,0 +1,103 @@
+.public {
+  background: $bg-color;
+  padding-top: 30px;
+
+  
+  
+  @media screen and (min-width: $breakpoint-md) {
+    margin-top: 60px;
+  }
+
+  &__switch {
+    max-width: 233px;
+    margin: 0 auto 30px;
+  }
+
+  &__switch-input {
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+    &:checked + label::before {
+      left: calc(100% - 2px);
+      transform: translateX(-100%);
+    }
+  }
+
+  &__switch-label {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    background: $separator-color;
+    border-radius: $radius-md;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      width: 50%;
+      background: $basic-white;
+      border-radius: $radius-md;
+      transition: 0.3s linear;
+      z-index: 2;
+    }
+  }
+
+  &__switch-text {
+    color: $main-color;
+    font-weight: 700;
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+
+  &__cards {
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    @media screen and (min-width: $breakpoint-md) {
+      flex: 1 1 45%;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 30%;
+    }
+  }
+
+  &__btn-container {
+    max-width: 211px;
+    margin: 0 auto 60px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 18px 0;
+    margin: 0 auto;
+    border-radius: $radius-md;
+    background: $regular-color;
+    color: $basic-white;
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+    cursor: pointer;
+
+    &:hover {
+      background: $hover-coolor;
+    }
+    &:active {
+      background: $active-color;
+    }
+  }
+
+  &__border {
+    border-bottom: 4px solid $separator-color;
+  }
+}

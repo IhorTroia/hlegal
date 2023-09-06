@@ -1,10 +1,33 @@
 .contact {
   padding: 30px 0;
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 60px 0;
+  }
   &__container {
+    @media screen and (min-width: $breakpoint-lg) {
+      display: flex;
+      gap: 60px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: 1110px;
+    }
+    @media screen and (min-width: $breakpoint-xxl) {
+      max-width: 1390px;
+    }
   }
 
   &__info {
     margin-bottom: 30px;
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 46%;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      flex: 1 1 35%;
+    }
   }
 
   &__info-map {
@@ -36,10 +59,15 @@
     padding-bottom: 30px;
     border-bottom: 4px solid $separator-color;
     margin-bottom: 30px;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   &__info-facebook {
-    display: block;
+    display: inline-block;
+    padding-right: 127px;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -60,6 +88,14 @@
       top: 22px;
       left: 45px;
     }
+
+    &:hover svg {
+      fill: $accent-color;
+    }
+    &:hover::before,
+    &:hover::after {
+      color: $accent-color;
+    }
   }
 
   &__info-svg {
@@ -71,6 +107,12 @@
   &__form {
     background: $bg-color;
     border-radius: $radius-md;
+    @media screen and (min-width: $breakpoint-lg) {
+      flex: 1 1 45%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      flex: 1 1 45%;
+    }
   }
 }
 .form {
@@ -89,6 +131,11 @@
     border-radius: $radius-sm;
     padding-left: 15px;
     margin-bottom: 15px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $regular-color;
+    }
   }
 
   &__message {
@@ -98,6 +145,10 @@
     border-radius: $radius-sm;
     padding-left: 15px;
     margin-bottom: 30px;
+    &:focus {
+      outline: none;
+      border: 1px solid $regular-color;
+    }
   }
 
   &__name::placeholder,
@@ -123,6 +174,10 @@
     border-radius: $radius-sm;
     padding-left: 15px;
     margin-bottom: 15px;
+    &:focus {
+      outline: none;
+      border: 1px solid $regular-color;
+    }
   }
 
   &__email {
@@ -132,6 +187,14 @@
     border-radius: $radius-sm;
     padding-left: 15px;
     margin-bottom: 30px;
+    &:focus {
+      outline: none;
+      border: 1px solid $regular-color;
+    }
+    &:invalid {
+      border: 1px solid red;
+      color: red;
+    }
   }
 
   &__name::placeholder,
@@ -148,6 +211,14 @@
     border-radius: $radius-md;
     background: $regular-color;
     color: $basic-white;
+    cursor: pointer;
     box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+
+    &:hover {
+      background: $hover-coolor;
+    }
+    &:active {
+      background: $active-color;
+    }
   }
 }
