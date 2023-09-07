@@ -61,6 +61,7 @@
       flex-wrap: wrap;
       justify-content: start;
       margin-bottom: 0;
+      // align-items: center;
     }
   }
 
@@ -78,6 +79,18 @@
     margin-bottom: 10px;
     @media screen and (min-width: $breakpoint-xl) {
       margin-bottom: 0;
+      padding-right: 25px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: 10px;
+        width: 6px;
+        height: 6px;
+        background: $separator-color;
+        border-radius: $radius-rounded;
+      }
     }
   }
 
@@ -88,6 +101,19 @@
     margin-bottom: 10px;
     @media screen and (min-width: $breakpoint-xl) {
       margin-bottom: 0;
+      padding-right: 25px;
+      padding-top: 2px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: 10px;
+        width: 6px;
+        height: 6px;
+        background: $separator-color;
+        border-radius: $radius-rounded;
+      }
     }
   }
 
@@ -95,6 +121,9 @@
     display: block;
     color: $regular-color;
     text-decoration: none;
+    @media screen and (min-width: $breakpoint-xl) {
+      padding-top: 2px;
+    }
   }
 
   &__desc {
