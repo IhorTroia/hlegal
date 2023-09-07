@@ -13,21 +13,6 @@
 })();
 
 (() => {
-  const popupOpenBtn = document.querySelector(".service__btn");
-  const popup = document.querySelector(".popup");
-  const popupCloseBtn = document.querySelector(".popup__close");
-
-  popupOpenBtn.addEventListener("click", () => {
-    popup.classList.add("active");
-  });
-
-  popupCloseBtn.addEventListener("click", () => {
-    popup.classList.remove("active");
-  });
-})();
-
-
-(() => {
   const tabsItems = document.querySelectorAll(".tabs__list-item");
   const contentsItems = document.querySelectorAll(".tabs__content-item");
 
@@ -70,3 +55,17 @@ const aboutSwiper = new Swiper(".aboutSlider__swiper", {
     clickable: true,
   },
 });
+
+(() => {
+  const popupOpenBtn = document.querySelector(".service__btn");
+  const popup = document.querySelector(".popup");
+  const popupCloseBtn = document.querySelector(".popup__close");
+
+  popupOpenBtn.addEventListener("click", () => {
+    popup.classList.add("active-pop");
+  });
+
+  popupCloseBtn.addEventListener("click", () => {
+    popup.classList.remove("active-pop");
+  });
+})();
